@@ -19,9 +19,9 @@
 ---
 
 ## 📫 Vamos nos conectar?
-- **LinkedIn:** [Seu Nome]([https://linkedin.com/in/seu-perfil](https://www.linkedin.com/in/nikolastesch/))
+- **LinkedIn:** [Nikolastesch]([https://linkedin.com/in/seu-perfil](https://www.linkedin.com/in/nikolastesch/))
 - **WhatsApp:** [Fale comigo](https://wa.me/5573999760129?text=Olá%20Nikolas,%20vi%20seu%20portfolio!)
-- **Instagram:** [@seu_insta](https://www.instagram.com/nikolas_tesch/)
+- **Instagram:** [@nikolas_tesch](https://www.instagram.com/nikolas_tesch/)
 
 ---
 *"A disciplina é a ponte entre metas e realizações."*
