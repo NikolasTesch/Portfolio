@@ -2,7 +2,6 @@
 
 ### Desenvolvedor Full Stack em formação & Designer Visual
 
-
 ## 💻 No que estou trabalhando?
 
 - Estudando integrações de sistemas com Agentes de IA
@@ -16,13 +15,6 @@
 | :--- | :--- | :--- |
 | HTML5, CSS3, JavaScript | Node.js, Express | Figma, Photoshop |
 | CSS | SQL / NoSQL |
-
----
-
-## 📊 Estatísticas do GitHub
-
-![Estatísticas do GitHub](https://github-readme-stats.vercel.app/api?username=NikolasTeschUI&show_icons=true&theme=dracula)
-![Top Linguagens](https://github-readme-stats.vercel.app/api/top-langs/?username=NikolasTesch&layout=compact&theme=dracula)
 
 ---
 
