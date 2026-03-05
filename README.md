@@ -19,7 +19,7 @@
 ---
 
 ## 📫 Vamos nos conectar?
-- **LinkedIn:** [Nikolastesch]([https://linkedin.com/in/seu-perfil](https://www.linkedin.com/in/nikolastesch/))
+- **LinkedIn:** [Nikolastesch]((https://www.linkedin.com/in/nikolastesch/))
 - **WhatsApp:** [Fale comigo](https://wa.me/5573999760129?text=Olá%20Nikolas,%20vi%20seu%20portfolio!)
 - **Instagram:** [@nikolas_tesch](https://www.instagram.com/nikolas_tesch/)
 
