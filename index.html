@@ -10,164 +10,177 @@
     <meta property="og:description" content="Portfólio pessoal de Nikolas Tesch, Desenvolvedor FullStack.">
     <meta property="og:type" content="website">
     <title>Nikolas Tesch - Portfólio</title>
-    <!-- Google Fonts: Quicksand para títulos arredondados e Inter para texto corrido -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome para os ícones -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%232bd0aa'/><text x='50%' y='50%' dominant-baseline='central' text-anchor='middle' font-family='Outfit, sans-serif' font-size='60' font-weight='800' fill='%231a1c23'>T</text></svg>">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- ===== ELEMENTOS DE FUNDO (GLASSMORPHISM) ===== -->
+    <div class="bg-blobs" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
 
-    <!-- Navegação Superior -->
+    <!-- ===== BOTÃO WHATSAPP FLUTUANTE (Sticky) ===== -->
+    <a href="https://wa.me/5573999760129?text=Ol%C3%A1%20Nikolas!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20uma%20oportunidade%2Fprojeto."
+       target="_blank"
+       class="whatsapp-fab"
+       aria-label="Falar no WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <!-- ===== NAVBAR ===== -->
     <nav class="navbar" id="navbar">
         <a href="#home" class="logo">Tesch</a>
         <ul class="nav-links" id="nav-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contato</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#portfolio">Projetos</a></li>
+            <li><a href="#contact" class="nav-cta-link">Contratar</a></li>
         </ul>
         <div class="mobile-menu-btn" id="mobile-btn" aria-label="Toggle Navigation" aria-expanded="false">
             <i class="fas fa-bars"></i>
         </div>
     </nav>
 
-    <!-- Seção Hero (Cartão de Perfil) -->
+    <!-- ===== HERO / INTRO SECTION ===== -->
     <header class="hero" id="home">
-        <div class="profile-card">
-            <div class="profile-img-container">
-                <!-- Imagem similar à referência -->
-                <img src="assets/img/perfil.png" alt="Nikolas Tesch" class="profile-img">
+        <div class="container intro-container">
+            <div class="intro-grid">
+                <!-- Card de Perfil (Esquerda) -->
+                <div class="profile-card fade-up">
+                    <div class="profile-img-container">
+                        <img src="assets/img/perfil.png" alt="Nikolas Tesch" class="profile-img">
+                    </div>
+
+                    <div class="availability-badge">
+                        <span class="avail-dot"></span>
+                        Disponível para projetos
+                    </div>
+
+                    <h1 class="profile-name">Nikolas Tesch</h1>
+                    <p class="profile-title">Desenvolvedor FullStack &amp; Designer</p>
+
+                    <div class="social-links">
+                        <a href="https://wa.me/5573999760129?text=Ol%C3%A1%20Nikolas!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20uma%20oportunidade%2Fprojeto." target="_blank" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/nikolas_tesch/" target="_blank" class="social-link" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/nikolastesch/" target="_blank" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a href="https://github.com/NikolasTesch" target="_blank" class="social-link" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                    </div>
+
+                    <a href="https://wa.me/5573999760129?text=Ol%C3%A1%20Nikolas!%20Quero%20iniciar%20um%20projeto%20com%20voc%C3%AA." target="_blank" class="hero-cta cta-pulse" id="hero-cta-btn" style="width: 100%; justify-content: center;">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                        Iniciar Meu Projeto Agora
+                    </a>
+                </div>
+
+                <!-- Informações Sobre (Direita) -->
+                <div class="intro-about fade-up" style="transition-delay: 0.2s;">
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 1.5rem;">Sobre Mim</h2>
+                    <p class="about-text-content" style="font-size: 1.3rem;">
+                        <span class="highlight">Olá! Sou Nikolas.</span> Um profissional de 21 anos Capixaba, que une a visão comercial e estética do Design e Vendas à lógica do Desenvolvimento de Software.
+                    </p>
+                    
+                    <div class="personal-details-mini" style="margin-top: 2rem;">
+                        <ul class="details-list-mini">
+                            <li><strong><i class="fas fa-map-marker-alt" style="margin-right: 8px;"></i> Localização:</strong> Colatina, ES</li>
+                            <li><strong><i class="fas fa-envelope" style="margin-right: 8px;"></i> E-mail:</strong> contato@nikolastesch.com</li>
+                            <li><strong><i class="fas fa-check-circle" style="margin-right: 8px;"></i> Status:</strong> <span class="badge">Disponível</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Stats de prova social inline -->
+                    <!-- <div class="intro-trust-stats">
+                        <div class="trust-stat">
+                            <strong>+20</strong>
+                            <span>Projetos entregues</span>
+                        </div>
+                        <div class="trust-stat-divider"></div>
+                        <div class="trust-stat">
+                            <strong>3+</strong>
+                            <span>Anos de experiência</span>
+                        </div>
+                        <div class="trust-stat-divider"></div>
+                        <div class="trust-stat">
+                            <strong>100%</strong>
+                            <span>Satisfação garantida</span>
+                        </div>
+                    </div> -->
+
+                </div>
             </div>
-            <h1 class="profile-name">Nikolas Tesch</h1>
-            <p class="profile-title">Desenvolvedor FullStack</p>
-            
-            <!-- Redes Sociais -->
-            <div class="social-links">
-                <a href="https://wa.me/5573999760129?text=Ol%C3%A1%20Nikolas!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20uma%20oportunidade%2Fprojeto." target="_blank" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
-                <a href="https://x.com/Nikolas_DiT" target="_blank" class="social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
-                <a href="https://www.linkedin.com/in/nikolastesch/" target="_blank" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-                <a href="https://github.com/NikolasTesch" target="_blank" class="social-link" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/nikolas_tesch/" target="_blank" class="social-link" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+        </div>
+
+        <!-- Indicador de Scroll animado -->
+        <div class="scroll-indicator" aria-hidden="true">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
             </div>
+            <span>Descubra mais</span>
         </div>
     </header>
 
-    <!-- Seção Sobre Mim -->
-    <section class="section" id="about">
+    <!-- ===== SERVIÇOS ===== -->
+    <section class="section bg-alt" id="services">
         <div class="container">
-            
-            <!-- Cabeçalho da Seção -->
             <div class="section-header fade-up">
-                <div class="section-icon">
-                    <i class="far fa-user" aria-hidden="true"></i>
-                </div>
-                <h2 class="section-title">Sobre Mim</h2>
+                <h2 class="section-title">Meus Serviços</h2>
             </div>
-            
-            <p class="about-text fade-up">
-                <span class="highlight">Olá! Sou Nikolas.</span> Um profissional de 21 anos Capixaba, que une a visão comercial e estética do Design e Vendas à lógica do Desenvolvimento de Software. 
-            </p>
-
-            <div class="about-content">
-                <!-- Detalhes Pessoais -->
-                <div class="personal-details fade-up">
-                    <h3 class="sub-heading">Detalhes Pessoais</h3>
-                    <ul class="details-list">
-                        <li class="detail-item">
-                            <span class="detail-label">Idade</span>
-                            <span class="detail-value">21 Anos</span>
-                        </li>
-                        <li class="detail-item">
-                            <span class="detail-label">Telefone</span>
-                            <span class="detail-value"><a href="tel:+5573999760129">+55 73 99976-0129</a></span>
-                        </li>
-                        <li class="detail-item">
-                            <span class="detail-label">E-mail</span>
-                            <span class="detail-value"><a href="mailto:nikolasditesch@gamil.com">nikolasditesch@gamil.com</a></span>
-                        </li>
-                        <li class="detail-item">
-                            <span class="detail-label">Site</span>
-                            <span class="detail-value"><a href="https://www.nikolastesch.com" target="_blank">www.nikolastesch.com</a></span>
-                        </li>
-                        <li class="detail-item">
-                            <span class="detail-label">Endereço</span>
-                            <span class="detail-value">Colatina, Espírito Santo, Brasil</span>
-                        </li>
-                        <li class="detail-item" style="margin-top: 5px;">
-                            <span class="detail-label">Status</span>
-                            <span class="badge">Disponível</span>
-                        </li>
-                    </ul>
+            <div class="services-grid">
+                <div class="service-card fade-up">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Desenvolvimento de sites modernos, responsivos e otimizados para performance e conversão.</p>
                 </div>
-
-                <!-- Interesses -->
-                <div class="my-interests fade-up" style="transition-delay: 0.2s;">
-                    <h3 class="sub-heading">Meus Interesses</h3>
-                    <div class="interests-grid">
-                        <div class="interest-item">
-                            <i class="fas fa-gamepad" aria-hidden="true"></i>
-                            <span>Jogos</span>
-                        </div>
-                        <div class="interest-item">
-                            <i class="fas fa-headphones-alt" aria-hidden="true"></i>
-                            <span>Música</span>
-                        </div>
-                        <div class="interest-item">
-                            <i class="fas fa-plane-departure" aria-hidden="true"></i>
-                            <span>Viagens</span>
-                        </div>
-                        <div class="interest-item">
-                            <i class="fas fa-laptop-code" aria-hidden="true"></i>
-                            <span>Tecnologia</span>
-                        </div>
-                        <div class="interest-item">
-                            <i class="fas fa-palette" aria-hidden="true"></i>
-                            <span>Artes</span>
-                        </div>
-                        <div class="interest-item">
-                            <i class="far fa-lightbulb" aria-hidden="true"></i>
-                            <span>Inovação</span>
-                        </div>
-                        <div class="interest-item">
-                            <i class="fas fa-heartbeat" aria-hidden="true"></i>
-                            <span>Saúde</span>
-                        </div>
-                        <div class="interest-item">
-                            <i class="fas fa-chart-line" aria-hidden="true"></i>
-                            <span>Finanças</span>
-                        </div>
-                    </div>
+                <div class="service-card fade-up" style="transition-delay: 0.1s;">
+                    <i class="fas fa-layer-group"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Criação de interfaces intuitivas e experiências focadas no usuário final.</p>
                 </div>
-            </div>
-
-            <!-- Botão de Download -->
-            <div class="download-btn-container fade-up" style="transition-delay: 0.3s;">
-                <a href="assets/Currículo - Nikolas Tesch.pdf" download="Currículo - Nikolas Tesch.pdf" class="download-btn" aria-label="Baixar CV">
-                    Baixar CV <i class="fas fa-download" aria-hidden="true"></i>
-                </a>
+                <div class="service-card fade-up" style="transition-delay: 0.2s;">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Otimização de CRO</h3>
+                    <p>Estratégias focadas em aumentar a taxa de conversão do seu produto digital.</p>
+                </div>
+                <div class="service-card fade-up" style="transition-delay: 0.3s;">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>Marketing Digital</h3>
+                    <p>Planejamento estratégico para posicionar sua marca e atrair clientes qualificados.</p>
+                </div>
+                <div class="service-card fade-up" style="transition-delay: 0.4s;">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Landing Pages</h3>
+                    <p>Criação de páginas de vendas focadas em capturar leads e gerar resultados.</p>
+                </div>
+                <div class="service-card fade-up" style="transition-delay: 0.5s;">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>SEO Analytics</h3>
+                    <p>Melhoria do posicionamento orgânico e análise de métricas de tráfego.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Seção de Skills -->
-    <section class="section" id="skills" style="padding-bottom: 2rem;">
+ 
+
+    <!-- ===== PORTFOLIO ===== -->
+    <section class="section bg-alt" id="portfolio" style="padding-top: 2rem;">
         <div class="container">
             <div class="section-header fade-up" style="margin-bottom: 2.5rem;">
-                <div class="section-icon">
-                    <i class="fas fa-laptop-code" aria-hidden="true"></i>
-                </div>
-                <h2 class="section-title">Minhas Habilidades</h2>
+                <h2 class="section-title">Portfólio</h2>
             </div>
-            
-            <p class="about-text fade-up" style="margin-bottom: 2rem;">
-                Clique nas habilidades abaixo para explorar meus projetos de acordo com a tecnologia.
-            </p>
 
+            <!-- 
+                TEMPLATE PARA NOVAS TECNOLOGIAS (FILTROS)
+                <div class="skill-item" data-filter="SLUG_DA_TECNOLOGIA">
+                    <i class="ICONE_DE_FONTAWESOME" aria-hidden="true"></i>
+                    <span>NOME_DA_TECNOLOGIA</span>
+                </div>
+            -->
             <div class="skills-grid fade-up">
                 <div class="skill-item active" data-filter="all">
                     <i class="fas fa-asterisk" aria-hidden="true"></i>
@@ -185,49 +198,40 @@
                     <i class="fab fa-js-square" aria-hidden="true"></i>
                     <span>JS</span>
                 </div>
-                <div class="skill-item" data-filter="ts">
-                    <i class="fas fa-code-branch" aria-hidden="true"></i>
-                    <span>TS</span>
-                </div>
-                <div class="skill-item" data-filter="python">
-                    <i class="fab fa-python" aria-hidden="true"></i>
-                    <span>Python</span>
-                </div>
-                <div class="skill-item" data-filter="sql">
-                    <i class="fas fa-database" aria-hidden="true"></i>
-                    <span>SQL</span>
-                </div>
-                <div class="skill-item" data-filter="nodejs">
-                    <i class="fab fa-node-js" aria-hidden="true"></i>
-                    <span>Node.js</span>
-                </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Seção de Portfolio -->
-    <!-- Removido o bg-color-alt e ajustado o padding top para parecarem a mesma seção -->
-    <section class="section" id="portfolio" style="padding-top: 2rem;">
-        <div class="container">
-            <div class="section-header fade-up" style="margin-bottom: 2.5rem;">
-                <div class="section-icon">
-                    <i class="far fa-folder-open" aria-hidden="true"></i>
-                </div>
-                <h2 class="section-title">Portfólio</h2>
-            </div>
-            
             <div class="portfolio-grid fade-up" id="portfolio-grid">
-                <!-- Projeto Fictício 1 (HTML, CSS, JS) -->
+                <!-- 
+                    TEMPLATE PARA ADIÇÃO DE NOVOS PROJETOS
+                    <div class="portfolio-item" data-category="CATEGORIAS">
+                        <div class="portfolio-img-wrapper">
+                            <img src="CAMINHO_DA_IMAGEM" alt="DESCRICAO_ALT" class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <a href="URL_DO_PROJETO" target="_blank" class="portfolio-link"><i class="fas fa-link" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title">TITULO_DO_PROJETO</h3>
+                            <p class="portfolio-desc">UMA_BREVE_DESCRICAO</p>
+                            <div class="portfolio-tags">
+                                <span class="p-tag">TAG1</span>
+                                <span class="p-tag">TAG2</span>
+                            </div>
+                        </div>
+                    </div>
+                -->
+
+                <!-- Projeto 1: DGM Detailing Clean -->
                 <div class="portfolio-item" data-category="html css js">
                     <div class="portfolio-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="E-commerce Website Project" class="portfolio-img">
+                        <img src="assets/img/portfolio/dmgcleaningdetaling.png" alt="DGM Detailing Clean" class="portfolio-img">
                         <div class="portfolio-overlay">
-                            <a href="#" class="portfolio-link"><i class="fas fa-link" aria-hidden="true"></i></a>
+                            <a href="https://dgmdetailingclean.vercel.app/" target="_blank" class="portfolio-link"><i class="fas fa-link" aria-hidden="true"></i></a>
                         </div>
                     </div>
                     <div class="portfolio-content">
-                        <h3 class="portfolio-title">E-commerce Moderno</h3>
-                        <p class="portfolio-desc">Uma aplicação web de e-commerce totalmente responsiva e interativa.</p>
+                        <h3 class="portfolio-title">DGM Detailing Clean</h3>
+                        <p class="portfolio-desc">Landing page premium para especialistas em limpeza e higienização detalhada de estofados.</p>
                         <div class="portfolio-tags">
                             <span class="p-tag">HTML</span>
                             <span class="p-tag">CSS</span>
@@ -236,56 +240,21 @@
                     </div>
                 </div>
 
-                <!-- Projeto Fictício 2 (React/TS - Usando tag ts) -->
-                <div class="portfolio-item" data-category="ts css html">
+                <!-- Projeto 2: Virando o Jogo -->
+                <div class="portfolio-item" data-category="html css js">
                     <div class="portfolio-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Dashboard Application Project" class="portfolio-img">
+                        <img src="assets/img/portfolio/virandoojogo.png" alt="Virando o Jogo" class="portfolio-img">
                         <div class="portfolio-overlay">
-                            <a href="#" class="portfolio-link"><i class="fas fa-link" aria-hidden="true"></i></a>
+                            <a href="https://virandoojogo.vercel.app/" target="_blank" class="portfolio-link"><i class="fas fa-link" aria-hidden="true"></i></a>
                         </div>
                     </div>
                     <div class="portfolio-content">
-                        <h3 class="portfolio-title">Dashboard Administrativo</h3>
-                        <p class="portfolio-desc">Painel complexo de visualização e controle de métricas e dados corporativos.</p>
+                        <h3 class="portfolio-title">Virando o Jogo</h3>
+                        <p class="portfolio-desc">Landing page premium para projeto esportivo fornecido pelo municipio de Teixeira de Freitas.</p>
                         <div class="portfolio-tags">
-                            <span class="p-tag">TS</span>
                             <span class="p-tag">HTML</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Projeto Fictício 3 (Python, SQL) -->
-                <div class="portfolio-item" data-category="python sql">
-                    <div class="portfolio-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Data Analysis Project" class="portfolio-img">
-                        <div class="portfolio-overlay">
-                            <a href="#" class="portfolio-link"><i class="fas fa-link" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">Plataforma de Data Analytics</h3>
-                        <p class="portfolio-desc">Ferramenta automatizada de análise e processamento em lote de dados variados.</p>
-                        <div class="portfolio-tags">
-                            <span class="p-tag">Python</span>
-                            <span class="p-tag">SQL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Projeto Fictício 4 (NodeJS, JS, SQL) -->
-                <div class="portfolio-item" data-category="nodejs js sql">
-                    <div class="portfolio-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1526045612212-70cb3597663a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="RESTful API Backend" class="portfolio-img">
-                        <div class="portfolio-overlay">
-                            <a href="#" class="portfolio-link"><i class="fas fa-link" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">API Bancária</h3>
-                        <p class="portfolio-desc">Sistema de API REST focado em transações financeiras e alta segurança de dados.</p>
-                        <div class="portfolio-tags">
-                            <span class="p-tag">Node.js</span>
-                            <span class="p-tag">SQL</span>
+                            <span class="p-tag">CSS</span>
+                            <span class="p-tag">JS</span>
                         </div>
                     </div>
                 </div>
@@ -293,25 +262,21 @@
         </div>
     </section>
 
-    <!-- Seção de Contato -->
-    <section class="section" id="contact">
+
+    <!-- ===== CONTATO — CTA final após prova social ===== -->
+    <section class="section contact-section" id="contact">
         <div class="container">
             <div class="section-header fade-up">
-                <div class="section-icon">
-                    <i class="far fa-paper-plane" aria-hidden="true"></i>
-                </div>
-                <h2 class="section-title">Entre em Contato</h2>
+                <h2 class="section-title">Pronto para Resultados Reais?</h2>
             </div>
-            
             <div class="contact-content fade-up">
                 <div class="contact-info">
-                    <h3 class="sub-heading">Vamos Conversar!</h3>
+
                     <p class="contact-desc">
-                        Estou no momento aberto a oportunidades de tempo integral, contratos ou trabalhos freelance. 
-                        Se você tem uma proposta em mente ou apenas quer trocar ideias, me mande uma mensagem!
+                        Seja um MVP, uma landing page de alta conversão ou uma API robusta, entrego soluções que geram resultados reais.
                     </p>
+
                     <div class="contact-methods" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
-                        <!-- Link WhatsApp Direto (Troque o número) -->
                         <a href="https://wa.me/5573999760129?text=Ol%C3%A1%20Nikolas!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20uma%20oportunidade%2Fprojeto." target="_blank" class="contact-card whatsapp">
                             <i class="fab fa-whatsapp" aria-hidden="true"></i>
                             <div>
@@ -319,20 +284,28 @@
                                 <span>+55 73 99976-0129</span>
                             </div>
                         </a>
-                        <!-- Link Email Direto -->
-                        <a href="mailto:nikolasditesch@gmail.com?subject=Contato%20via%20Portf%C3%B3lio&body=Ol%C3%A1%20Nikolas,%0D%0A%0D%0AGostaria%20de%20discutir%20uma%20poss%C3%ADvel%20colabora%C3%A7%C3%A3o.%0D%0A%0D%0AAtenciosamente," class="contact-card email">
+                        <a href="mailto:contato@nikolastesch.com" class="contact-card email">
                             <i class="fas fa-at" aria-hidden="true"></i>
                             <div>
                                 <h4>E-mail</h4>
-                                <span>nikolasditesch@gmail.com</span>
+                                <span>contato@nikolastesch.com</span>
                             </div>
                         </a>
                     </div>
-                    
+
+                    <!-- Botão de CTA final de alto contraste -->
+                    <div class="contact-cta-final">
+                        <a href="https://wa.me/5573999760129?text=Ol%C3%A1%20Nikolas!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20iniciar%20um%20projeto."
+                           target="_blank"
+                           class="cta-final-btn cta-pulse">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                            Quero Meu Projeto Agora
+                        </a>
+                    </div>
+
                     <div class="contact-socials">
                         <a href="https://www.linkedin.com/in/nikolastesch/" target="_blank" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
                         <a href="https://github.com/NikolasTesch" target="_blank" class="social-btn" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
-                        <a href="https://x.com/Nikolas_DiT" target="_blank" class="social-btn" aria-label="Twitter"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
                         <a href="https://www.instagram.com/nikolas_tesch/" target="_blank" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                     </div>
                 </div>
@@ -340,7 +313,10 @@
         </div>
     </section>
 
-    <!-- Script de Lógica e Interações -->
-    <script src="script.js" defer></script>
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <p>&copy; 2026 Nikolas Tesch. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

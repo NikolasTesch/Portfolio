@@ -55,8 +55,7 @@ document.querySelectorAll('.fade-up').forEach(element => {
     appearOnScroll.observe(element);
 });
 
-// O botão de currículo agora é uma tag 'a' nativa com atributo 'download',
-// sem necessidade de simulação JS.
+
 
 // Lógica de Filtro do Portfolio (Skills)
 const filterButtons = document.querySelectorAll('.skill-item');
@@ -94,5 +93,3 @@ filterButtons.forEach(button => {
         });
     });
 });
-
-
